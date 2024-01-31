@@ -5,11 +5,148 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Magazine</title>
+  <!-- css -->
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+  <header>
+    <h1><a href="index.html">Magazine</a></h1>
+    <button aria-expanded="false" aria-controls="nav">
+      <svg viewBox="0 0 100 80" width="40" height="40">
+        <title>Navigation Menu</title>
+        <rect width="100" height="20"></rect>
+        <rect y="30" width="100" height="20"></rect>
+        <rect y="60" width="100" height="20"></rect>
+      </svg>
+    </button>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contect</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+
+    <section>
+      <h2>Recent Posts</h2>
+
+      <article>
+        <!-- todo: come back and resize img -->
+        <img src="img/healthy-breakfast-pots.jpg" alt="healthy breakfast pots">
+        <h3>Sept 14, 2024</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam numquam vero accusantium! Temporibus aperiam
+          consequuntur exercitationem officia vero at blanditiis, aut, est, voluptatibus nobis voluptate perferendis
+          iusto omnis earum non!</p>
+      </article>
+      <article>
+        <img src="img/legs-running-on-track.jpg" alt="person running on a track">
+        <h3>August 17, 2024</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sed quibusdam, hic autem odit doloremque illo
+          quos deleniti neque perferendis nemo rerum dolores voluptate provident. Libero aliquam officiis atque tempora.
+        </p>
+      </article>
+
+      <article>
+        <img src="img/writing-down-goals.jpg" alt="person writing on a Journal">
+        <h3>August 3, 2024</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aliquam sint quo repudiandae aperiam beatae
+          voluptate laboriosam optio magni ratione, exercitationem eius! Praesentium dolore, fuga unde culpa fugit vero
+          provident!</p>
+      </article>
+      <article>
+        <img src="img/healthy-salad.jpg" alt="healthy garden salad">
+        <h3>July 20, 2024</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum soluta temporibus asperiores quia commodi
+          voluptas nesciunt architecto quam, ipsa natus distinctio eveniet voluptatem quasi at. Est odio at ipsam sequi.
+        </p>
+      </article>
+
+    </section>
+
+    <section>
+      <h2>Popular Posts</h2>
+
+      <article>
+        <img src="img/vrkasana-yoga.jpg" alt="">
+        <h3>Benefits of Yoga</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ex voluptatem corporis fugit recusandae
+          nisi natus aut optio consequatur, molestiae deleniti, illo veniam distinctio? Recusandae expedita corrupti ex
+          cum officia!</p>
+      </article>
+
+      <article>
+        <img src="img/abstract.jpg" alt="">
+        <h3>Meditation for the mind</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur velit minima aliquid, sed itaque ratione
+          ab reiciendis, temporibus totam inventore debitis corrupti mollitia? Corrupti sint officiis ducimus.
+          Dignissimos, quo ducimus?</p>
+      </article>
+
+      <article>
+        <img src="img/beach-at-sunrise.jpg" alt="">
+        <h3>Location, location, location</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique tempora id, nisi dolores ex tempore
+          obcaecati rem laborum exercitationem beatae officiis est maxime, tenetur consectetur voluptatibus ea
+          voluptatum
+          unde libero.</p>
+      </article>
+
+      <article>
+        <img src="img/cat-photo.jpg" alt="">
+        <h3>Family Pets</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum similique quis sequi nihil consectetur
+          consequuntur mollitia impedit ut, odio voluptates aut, at quod! Ullam atque ducimus quos nam dicta esse.</p>
+      </article>
+
+      <article>
+        <img src="img/beach-wind.jpg" alt="">
+        <h3>Taking Breaks</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem earum natus reprehenderit ipsum molestias, ab
+          harum inventore laboriosam possimus dicta eaque necessitatibus voluptatem cumque in rerum voluptates nobis?
+          Ut,
+          consequuntur!</p>
+      </article>
+    </section>
+
+
+  </main>
+  <footer>
+    <div>
+      <h2>Magazine</h2>
+    </div>
+    <div>
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#">Meals</a></li>
+        <li><a href="#">Exercise</a></li>
+        <li><a href="#">Mind</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Newsletter</h2>
+      <form action="#" method="POST">
+        <label for="email">Email</label>
+        <input type="email" id="email">
+      </form>
+    </div>
+
+  </footer>
 </body>
 
 </html>

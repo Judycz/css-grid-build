@@ -1,3 +1,8 @@
+/* css resst :
+** morden css reset(use this)
+** Reboot
+** normalize css reset
+*/
 /* Box sizing rules */
 *,
 *::before,
@@ -55,7 +60,7 @@ img {
 }
 
 /* Natural flow and rhythm in articles by default */
-article > * + * {
+article>*+* {
   margin-top: 1em;
 }
 
