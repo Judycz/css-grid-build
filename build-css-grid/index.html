@@ -9,32 +9,37 @@
   <!-- css -->
 
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Js -->
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
   <header>
-    <h1><a href="index.html">Magazine</a></h1>
-    <button aria-expanded="false" aria-controls="nav">
-      <svg viewBox="0 0 100 80" width="40" height="40">
-        <title>Navigation Menu</title>
-        <rect width="100" height="20"></rect>
-        <rect y="30" width="100" height="20"></rect>
-        <rect y="60" width="100" height="20"></rect>
-      </svg>
-    </button>
-    <nav id="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contect</a></li>
-      </ul>
-    </nav>
+    <div class="inner-container">
+      <h1><a href="index.html">Magazine</a></h1>
+      <button aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 100 80" width="40" height="40">
+          <title>Navigation Menu</title>
+          <rect width="100" height="20"></rect>
+          <rect y="30" width="100" height="20"></rect>
+          <rect y="60" width="100" height="20"></rect>
+        </svg>
+      </button>
+      <nav id="nav">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contect</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <div class="grid-container">
 
-    <section>
+    <section class="recent-posts">
       <h2>Recent Posts</h2>
 
       <article>
@@ -70,83 +75,96 @@
 
     </section>
 
-    <section>
+    <section class="popular-posts">
       <h2>Popular Posts</h2>
 
       <article>
         <img src="img/vrkasana-yoga.jpg" alt="">
-        <h3>Benefits of Yoga</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ex voluptatem corporis fugit recusandae
-          nisi natus aut optio consequatur, molestiae deleniti, illo veniam distinctio? Recusandae expedita corrupti ex
-          cum officia!</p>
+        <div>
+          <h3>Benefits of Yoga</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ex voluptatem corporis fugit recusandae
+            nisi natus aut optio consequatur, molestiae deleniti, illo veniam distinctio? Recusandae expedita corrupti
+            ex
+            cum officia!</p>
+        </div>
       </article>
 
       <article>
         <img src="img/abstract.jpg" alt="abstract">
-        <h3>Meditation for the mind</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur velit minima aliquid, sed itaque ratione
-          ab reiciendis, temporibus totam inventore debitis corrupti mollitia? Corrupti sint officiis ducimus.
-          Dignissimos, quo ducimus?</p>
+        <div>
+          <h3>Meditation for the mind</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur velit minima aliquid, sed itaque
+            ratione
+            ab reiciendis, temporibus totam inventore debitis corrupti mollitia? Corrupti sint officiis ducimus.
+            Dignissimos, quo ducimus?</p>
+        </div>
       </article>
 
       <article>
         <img src="img/beach-at-sunrise.jpg" alt="">
-        <h3>Location, location, location</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique tempora id, nisi dolores ex tempore
-          obcaecati rem laborum exercitationem beatae officiis est maxime, tenetur consectetur voluptatibus ea
-          voluptatum
-          unde libero.</p>
+        <div>
+          <h3>Location, location, location</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique tempora id, nisi dolores ex tempore
+            obcaecati rem laborum exercitationem beatae officiis est maxime, tenetur consectetur voluptatibus ea
+            voluptatum
+            unde libero.</p>
+        </div>
       </article>
 
       <article>
         <img src="img/cat-photo.jpg" alt="">
-        <h3>Family Pets</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum similique quis sequi nihil consectetur
-          consequuntur mollitia impedit ut, odio voluptates aut, at quod! Ullam atque ducimus quos nam dicta esse.</p>
+        <div>
+          <h3>Family Pets</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum similique quis sequi nihil consectetur
+            consequuntur mollitia impedit ut, odio voluptates aut, at quod! Ullam atque ducimus quos nam dicta esse.</p>
+        </div>
       </article>
 
       <article>
         <img src="img/beach-wind.jpg" alt="">
-        <h3>Taking Breaks</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem earum natus reprehenderit ipsum molestias, ab
-          harum inventore laboriosam possimus dicta eaque necessitatibus voluptatem cumque in rerum voluptates nobis?
-          Ut,
-          consequuntur!</p>
+        <div>
+          <h3>Taking Breaks</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem earum natus reprehenderit ipsum molestias, ab
+            harum inventore laboriosam possimus dicta eaque necessitatibus voluptatem cumque in rerum voluptates nobis?
+            Ut,
+            consequuntur!</p>
+        </div>
       </article>
     </section>
 
 
-  </main>
-  <footer>
-    <div>
-      <h2>Magazine</h2>
-    </div>
-    <div>
-      <h2>Navigation</h2>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <h2>Categories</h2>
-      <ul>
-        <li><a href="#">Meals</a></li>
-        <li><a href="#">Exercise</a></li>
-        <li><a href="#">Mind</a></li>
-      </ul>
-    </div>
-    <div>
-      <h2>Newsletter</h2>
-      <form action="#" method="POST">
-        <label for="email">Email</label>
-        <input type="email" id="email">
-      </form>
-    </div>
 
-  </footer>
+    <footer>
+      <div>
+        <h2>Magazine</h2>
+      </div>
+      <div>
+        <h2>Navigation</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Categories</h2>
+        <ul>
+          <li><a href="#">Meals</a></li>
+          <li><a href="#">Exercise</a></li>
+          <li><a href="#">Mind</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Newsletter</h2>
+        <form action="#" method="POST">
+          <label for="email">Email</label>
+          <input type="email" id="email">
+        </form>
+      </div>
+
+    </footer>
+  </div>
 </body>
 
 </html>
