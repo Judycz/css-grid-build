@@ -1,11 +1,14 @@
+@use 'breakpoints' as *;
+@use 'mixin' as *;
+
 header {
   border-bottom: 1px solid #ccc;
   box-shadow: 0 0 8px #ccc;
 
   .inner-container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 1rem;
+
+    @include container;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -37,5 +40,23 @@ header {
 
   .show {
     max-height: 200px;
+  }
+}
+
+@media screen and (min-width: $xsmall) {
+  header {
+    button {
+      display: none;
+    }
+
+    nav {
+      flex: 0 0 auto;
+      max-height: unset;
+
+      ul {
+        display: flex;
+        gap: 1rem;
+      }
+    }
   }
 }
